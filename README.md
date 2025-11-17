@@ -158,10 +158,11 @@ mysql -u root -p yuzhuapp < database/schema.sql
 
 ## 联系方式
 
-- 邮箱: support@yuzhuapp.com
-- 电话: 400-xxx-xxxx
+- 邮箱: 3415379287@qq.com
+- 电话: 18890222714
 
 ## 更新日志
 
 查看 [CHANGELOG.md](CHANGELOG.md) 了解版本更新历史
+
 
