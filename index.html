@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="远程调控玉竹育种APP - 智能化玉竹育种管理平台">
+    <meta name="keywords" content="玉竹,育种,远程控制,物联网,农业">
+    <title>玉竹育种APP - 首页</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="frontend/assets/css/custom.css">
+    
+    <style>
+        :root {
+            --color-primary: #2E7D32;
+            --color-secondary: #66BB6A;
+            --color-text: #212529;
+            --color-text-secondary: #6C757D;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+            color: var(--color-text);
+            background-color: #F5F5F5;
+        }
+        
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            color: var(--color-primary) !important;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+            padding: 12px 32px;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1B5E20;
+            border-color: #1B5E20;
+        }
+        
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-seedling me-2"></i>玉竹育种APP
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/pages/monitoring/monitoring-dashboard.html">监测</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/pages/control/device-control.html">调控</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/pages/data/data-query.html">数据</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/pages/knowledge/knowledge-base.html">知识库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="frontend/pages/auth/login.html">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main style="margin-top: 76px;">
+        <!-- 英雄区域 -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>智能化玉竹育种管理平台</h1>
+                <p>远程监测 · 精准调控 · 数据管理 · 知识共享</p>
+                <a href="frontend/pages/auth/register.html" class="btn btn-light btn-lg me-2">
+                    <i class="fas fa-user-plus me-2"></i>立即注册
+                </a>
+                <a href="frontend/pages/auth/login.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-sign-in-alt me-2"></i>登录
+                </a>
+            </div>
+        </section>
+
+        <!-- 功能特性 -->
+        <section class="container my-5">
+            <div class="text-center mb-5">
+                <h2>核心功能</h2>
+                <p class="text-muted">为玉竹爱好者与科研人员提供全方位的育种管理服务</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>远程监测</h4>
+                        <p class="text-muted">
+                            实时采集环境参数，通过高清摄像头查看玉竹长势，
+                            智能分析生长状态，异常情况及时预警。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h4>远程调控</h4>
+                        <p class="text-muted">
+                            远程操控灌溉、补光、温控、施肥等设备，
+                            支持手动操作和定时任务，定制化调控方案。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>数据管理</h4>
+                        <p class="text-muted">
+                            云端存储所有数据，支持多维度查询分析，
+                            图表可视化展示，导出Excel、PDF报表。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>知识库</h4>
+                        <p class="text-muted">
+                            涵盖养护指南、品种资源、经验交流社区，
+                            助力提升育种技能和知识水平。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>实验管理</h4>
+                        <p class="text-muted">
+                            研究者专属功能，支持实验项目管理，
+                            设置实验组与对照组，生成对比分析报告。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon text-center">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>安全可靠</h4>
+                        <p class="text-muted">
+                            数据加密存储，操作日志不可篡改，
+                            角色权限划分，保障数据安全。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术特点 -->
+        <section class="bg-white py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>技术特点</h2>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>响应式设计</h5>
+                                <p class="text-muted mb-0">
+                                    支持手机、平板、桌面多设备访问，完美适配各种屏幕尺寸。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-bolt fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>高性能</h5>
+                                <p class="text-muted mb-0">
+                                    首页加载≤3秒，远程操控响应≤5秒，数据查询≤2秒。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-wifi fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>物联网支持</h5>
+                                <p class="text-muted mb-0">
+                                    支持MQTT协议，可同时连接≥10台物联网设备，数据传输成功率≥99.5%。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-users fa-2x text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>双模式设计</h5>
+                                <p class="text-muted mb-0">
+                                    爱好者模式简洁直观，研究者模式功能完整，满足不同用户需求。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>关于我们</h5>
+                    <p class="text-muted">
+                        专注于玉竹育种智能化管理，为爱好者和研究者提供专业的远程监测与调控服务。
+                    </p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5>快速链接</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">首页</a></li>
+                        <li><a href="frontend/pages/monitoring/monitoring-dashboard.html" class="text-muted text-decoration-none">监测</a></li>
+                        <li><a href="frontend/pages/control/device-control.html" class="text-muted text-decoration-none">调控</a></li>
+                        <li><a href="frontend/pages/data/data-query.html" class="text-muted text-decoration-none">数据</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5>联系我们</h5>
+                    <p class="text-muted mb-0">
+                        <i class="fas fa-envelope me-2"></i>support@yuzhuapp.com<br>
+                        <i class="fas fa-phone me-2"></i>400-xxx-xxxx
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="bg-light">
+            
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2024 玉竹育种APP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="frontend/assets/js/config.js"></script>
+</body>
+</html>
+
